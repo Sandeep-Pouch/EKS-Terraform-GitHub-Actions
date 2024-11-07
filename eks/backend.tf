@@ -8,7 +8,7 @@ terraform {
   }
   backend "s3" {
     bucket         = "mern-end-to-end-project"
-    region         = "us-east-2"
+    region         = "us-east-1"
     key            = "eks/terraform.tfstate"
     dynamodb_table = "mern-end-to-end-project"
     encrypt        = true
