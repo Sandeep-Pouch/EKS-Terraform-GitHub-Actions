@@ -7,10 +7,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "my-ews-baket1122"
+    bucket         = "mern-end-to-end-project"
     region         = "us-east-2"
     key            = "eks/terraform.tfstate"
-    dynamodb_table = "Lock-Files"
+    dynamodb_table = "mern-end-to-end-project"
     encrypt        = true
   }
 }
